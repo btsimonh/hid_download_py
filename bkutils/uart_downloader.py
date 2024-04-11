@@ -204,7 +204,7 @@ class UartDownloader(object):
             # time.sleep(0.01)
 
         self.log("Gotten Bus...")
-        time.sleep(0.01)
+        time.sleep(0.1)
         self.bootItf.Drain()
 
         # Step3: set baudrate, delay 100ms

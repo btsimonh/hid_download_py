@@ -82,6 +82,9 @@ def BFD(v,bs,bl):
 def BIT(n):
     return 1<<n
 
+Kb = 1024
+Mb = 1024 * Kb
+
 tblFlashInt = [
     #        MID                      IC Name         manufactor     size        # SR  unprot    prot       mask                  sb    length
     FlashInt(FLASH_ID_XTX_25F04B,     "PN25F04B",     "xtx",      4 *1024*1024,   1,    0x00,    0x07,   BFD(0x0f,2,4),           2,    4,    [0x05,0xff,0xff,0xff],   [0x01,0xff,0xff,0xff]),
